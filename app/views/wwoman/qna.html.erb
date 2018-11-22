@@ -1,0 +1,8 @@
+<div>
+    <% @post.each do |f| %>
+    질문 : <%= f.question%><br>
+    이름 : <%= f.qna_name%><br>
+    핸드폰 번호: <%= f.qna_phone%><br>
+    <a href = "/wwoman/qna_destroy/<%=f.id%>">삭제하기</a><br>
+    <%end%>
+</div>
